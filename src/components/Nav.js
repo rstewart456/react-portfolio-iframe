@@ -34,7 +34,7 @@ const Nav = () => {
   if (!locat) {
   return (
     <div>
-      <div className='fixed p-2 h-12 w-full bg-black lg:flex items-center lg:justify-between z-50'>
+      <div className='fixed text-white p-2 h-12 w-full bg-black lg:flex items-center lg:justify-between z-50'>
         <div className='flex justify-between items-center'>
           <div>Ronald Portfolio</div>
           {isOpen ? (

@@ -20,23 +20,23 @@ function App({getProjects}) {
 
 
   return (
-      <div className='text-white'>
-        <Nav />
+    <div>
+      <Nav />
         <Switch>
           <Route exact path='/'>
             <Home />
-            </Route>
+          </Route>
           <Route exact path='/projects'>
             <Projects />
-            </Route>
+          </Route>
           <Route exact path='/about'>
             <About />
-            </Route>
+          </Route>
           <Route exact path='/liveDemo/:pid'>
             <LiveDemo />
-            </Route>
+          </Route>
         </Switch>
-      </div>
+    </div>
   );
 }
 
