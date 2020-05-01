@@ -60,9 +60,6 @@ const Nav = () => {
           <Link to='/projects' onClick={() => setisOpen(!isOpen)} className='block p-3 hover:text-indigo-600'>
             Projects
           </Link>
-          <Link to='/about' onClick={() => setisOpen(!isOpen)} className='block p-3 hover:text-indigo-600'>
-            About
-          </Link>
         </div>
       </div>
     </div>

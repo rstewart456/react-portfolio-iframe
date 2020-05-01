@@ -12,7 +12,7 @@ export const Home = () => {
         className='text-white h-full lg:min-h-screen bg-fixed'
         style={{ backgroundImage: `url(${codeimage}) ` }}
       >
-        <div className='w-screen h-full md:h-screen lg:h-full bg-scroll lg:w-1/2 opacity-75 bg-black lg:float-right flex-row justify-center items-center'>
+        <div className='w-screen h-full lg:h-screen bg-scroll lg:w-1/2 opacity-75 bg-black lg:float-right flex-row justify-center items-center'>
           <div className='flex justify-center items-center relative pt-12'>
             <img
               className='h-48 w-48 lg:hidden rounded-full border-orange-900 border-4'

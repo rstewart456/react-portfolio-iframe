@@ -6,7 +6,6 @@ import { getProjects } from './actions/projects';
 import {Route, Switch} from 'react-router-dom'
 import Projects from './components/Projects';
 import { Home } from './components/Home';
-import About from './components/About';
 import LiveDemo from './components/livedemo'
 
 
@@ -28,9 +27,6 @@ function App({getProjects}) {
           </Route>
           <Route exact path='/projects'>
             <Projects />
-          </Route>
-          <Route exact path='/about'>
-            <About />
           </Route>
           <Route exact path='/liveDemo/:pid'>
             <LiveDemo />

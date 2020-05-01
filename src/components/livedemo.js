@@ -11,7 +11,9 @@ const LiveDemo = ({projects}) => {
     const [spinner, setSpinner] = useState(true)
 
     const Load = () => {
-      setSpinner(false)
+      setTimeout(() => {
+        setSpinner(false);
+      }, 30)     
     }
 
     const history = useHistory()
@@ -28,8 +30,21 @@ const LiveDemo = ({projects}) => {
 
     return (
       <div>
-        {spinner ? (<div className='flex h-screen flex-col justify-center items-center'><Spinner /></div>) : null}
-        <div id='parent' className='relative h-screen w-screen overflow-hidden'>
+        <div
+          className={
+            spinner
+              ? 'flex h-screen flex-col justify-center items-center'
+              : 'hidden'
+          }
+        >
+          <Spinner />
+        </div>
+        <div
+          id='parent'
+          className={
+            spinner ? 'hidden' : 'relative h-screen w-screen overflow-hidden'
+          }
+        >
           <iframe
             onLoad={() => Load()}
             className='h-screen w-full'

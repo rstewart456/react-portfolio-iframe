@@ -9,9 +9,9 @@ const Projects = ({projects}) => {
       <div className='bg-orange-200'>
         <div className='text-center text-black text-5xl pt-16'>Projects</div>
         <div className='px-4 lg:px-24 text-center text-2xl text-black'>The Red Close button on lower right side in the LiveDemo Page, will take you back to this page.</div>
-        <div className='flex flex-row flex-wrap px-6 justify-between'>
+        <div className='flex flex-row flex-wrap lg:px-6 justify-between'>
           {projects.map((doc) => (
-            <div className='text-black py-6 px-6' key={doc.id}>
+            <div className='text-black p-6' key={doc.id}>
               <div className='max-w-sm rounded overflow-hidden shadow-lg'>
                 <img
                   className='w-full'
