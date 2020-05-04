@@ -21,17 +21,17 @@ function App({getProjects}) {
   return (
     <div>
       <Nav />
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route exact path='/projects'>
-            <Projects />
-          </Route>
-          <Route exact path='/liveDemo/:pid'>
-            <LiveDemo />
-          </Route>
-        </Switch>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+        <Route exact path='/projects'>
+          <Projects />
+        </Route>
+        <Route exact path='/liveDemo/:pid'>
+          <LiveDemo />
+        </Route>
+      </Switch>
     </div>
   );
 }

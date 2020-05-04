@@ -12,15 +12,15 @@ export const Home = () => {
         className='text-white h-full lg:min-h-screen bg-fixed'
         style={{ backgroundImage: `url(${codeimage}) ` }}
       >
-        <div className='w-screen h-full lg:h-screen bg-scroll lg:w-1/2 opacity-75 bg-black lg:float-right flex-row justify-center items-center'>
+        <div className='w-screen h-full lg:h-screen rotate-180 bg-scroll lg:w-1/2 opacity-75 bg-black lg:float-right flex-row justify-center items-center'>
           <div className='flex justify-center items-center relative pt-12'>
             <img
-              className='h-48 w-48 lg:hidden rounded-full border-orange-900 border-4'
+              className='h-48 w-52 lg:hidden rounded-full'
               src={theman}
               alt='theman'
             />
           </div>
-          <div className='p-12 lg:pt-24 lg:pb-12 lg:px-12 text-3xl lg:text-5xl'>
+          <div className='p-12 lg:pt-24 text-3xl lg:text-5xl'>
             My name is <b>Ronald</b> and I'm a web Developer
           </div>
           <p className='lg:text-lg px-12'>
@@ -36,7 +36,7 @@ export const Home = () => {
           <div className='text-2xl lg:text-3xl text-center py-6 px-8'>
             Contact Me
           </div>
-          <div className='flex px-6 pb-12 lg:px-24 justify-between'>
+          <div className='flex px-6 pb-12 lg:px-24 px-12 justify-between'>
             <a href='mailto:rstewart456@gmail.com'>
               <Icon path={mdiEmail} title='Email' size={3} />
             </a>
