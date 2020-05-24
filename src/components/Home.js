@@ -1,7 +1,6 @@
 import React from 'react'
 import Icon from '@mdi/react'
 import { mdiEmail, mdiLinkedin, mdiGithub } from '@mdi/js';
-import theman from '../assets/image/aman.jpg'
 import codeimage from '../assets/image/coding-bg.png';
 
 
@@ -13,14 +12,7 @@ export const Home = () => {
         style={{ backgroundImage: `url(${codeimage}) ` }}
       >
         <div className='w-screen h-full lg:h-screen rotate-180 bg-scroll lg:w-1/2 opacity-75 bg-black lg:float-right flex-row justify-center items-center'>
-          <div className='flex justify-center items-center relative pt-12'>
-            <img
-              className='h-48 w-52 lg:hidden rounded-full'
-              src={theman}
-              alt='theman'
-            />
-          </div>
-          <div className='p-12 lg:pt-24 text-3xl lg:text-5xl'>
+          <div className='p-12 pt-24 text-3xl lg:text-5xl'>
             My name is <b>Ronald</b> and I'm a web Developer
           </div>
           <p className='lg:text-lg px-12'>

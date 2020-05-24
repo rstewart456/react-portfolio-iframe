@@ -54,10 +54,18 @@ const Nav = () => {
               : 'hidden lg:flex lg:justify-between lg:items-center'
           }
         >
-          <Link to='/' onClick={() => setisOpen(!isOpen)} className='block p-3 hover:text-indigo-600'>
+          <Link
+            to='/'
+            onClick={() => setisOpen(!isOpen)}
+            className='block p-3 text-white bg-black hover:text-indigo-600'
+          >
             Home
           </Link>
-          <Link to='/projects' onClick={() => setisOpen(!isOpen)} className='block p-3 hover:text-indigo-600'>
+          <Link
+            to='/projects'
+            onClick={() => setisOpen(!isOpen)}
+            className='block p-3 text-white bg-black hover:text-indigo-600'
+          >
             Projects
           </Link>
         </div>
